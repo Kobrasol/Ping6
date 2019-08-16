@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=Windows-1251"/>
+<title>
+Setting
+</title>
+<hta:application
+	Icon = 'config/PE17.ICO'
+	id = 'oHTA'
+	Border='thin'
+	BorderStyle='normal'
+	Caption='yes'
+	ContextMenu='yes'
+	InnerBorder='yes'
+	MAXIMIZEBUTTON = 'no'
+	MINIMIZEBUTTON = 'yes'
+	Navigable='no'
+	SCROLL='yes'
+	ScrollFlat='no'
+	Selection='no'
+	ShowInTaskbar='yes'
+	SingleInstance='no'
+	SysMenu='yes'
+	Version='5.0 RC1'
+	WindowState='normal'
+	applicationName = 'Setting'
+/>
+		<script src="config/Setting.vbs" type="text/vbscript"></script>
+		<link href="config/confcss.css" rel="stylesheet" type="text/css" media="screen" />
+
+</head>
+<body onload='WindowOnLoad()'></body>
+<body bgcolor='buttonface' style="border: none; font: 8pt sans-serif" scroll='yes' text='buttontext'>
+<div id='objWin'></div>
+<TABLE border="1">
+<TR>
+	<input id="ResetB" type="button" value="Обновить" onclick="XMLsave_onclick"></input>
+	<input id="CloseButton" type="button" value="Закрыть" onclick="Close"></input>	
+</TR>
+<TR>
+<input name='objSIP' size='2' value=''>Адрессов.</input>
+</TR>
+</TABLE>
+</body>
+</html>

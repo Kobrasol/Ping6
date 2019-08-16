@@ -1,0 +1,5 @@
+body { font-size:x-small;border-style:solid; border:1px; border-color:#000000; font-family:Verdana, Arial, Helvetica, Geneva, sans-serif; }
+table{ font-size:x-small;border-style:solid;WIDTH:100%;border:1px; border-color:#000000;font-family:Verdana, Arial, Helvetica, Geneva, sans-serif; }
+#TH{ font-size:x-small;border-style:solid;border:1px; border-color:#000000;font-family:Verdana, Arial, Helvetica, Geneva, sans-serif; }
+#TD{ font-size:x-small;border-style:solid;border:1px; border-color:#000000;font-family:Verdana, Arial, Helvetica, Geneva, sans-serif; }
+#stime { text-align: center; font-weight: Bold; color: #0000FF; }

@@ -1,0 +1,62 @@
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; CHARSET=Windows-1251'/>
+<title>
+Ping IP
+</title>
+<hta:application
+	Icon = 'config/PE17.ICO'
+	id = 'oHTA'
+	Border='thin'
+	BorderStyle='normal'
+	Caption='yes'
+	ContextMenu='yes'
+	InnerBorder='yes'
+	MAXIMIZEBUTTON = 'no'
+	MINIMIZEBUTTON = 'yes'
+	Navigable='no'
+	SCROLL='no'
+	ScrollFlat='no'
+	Selection='no'
+	ShowInTaskbar=''
+	SingleInstance='no'
+	SysMenu='yes'
+	Version='6.0 RC1'
+	WindowState='normal'
+	applicationName = 'Ping'
+/>
+		<script src='config/myFunction.vbs' type='text/vbscript'></script>
+		<link href='config/confcss.css' rel='stylesheet' type='text/css' media='screen' />
+
+</head>
+<div id='objWin'></div>
+<body onload='WindowOnLoad()'></body>
+<BODY STYLE="font:9pt arial; color:#000000; filter:progid:DXImageTransform.Microsoft.Gradient (GradientType=0, StartColorStr='#ddd7ff', EndColorStr='#7670ff')">
+
+<TABLE border='1'>
+<TR>
+	<TH><input type='text' id='SetTime' style='text-align: center' size='1' value='10'></input>
+	<select size='1' name='sTs'>
+        <option value='1'>сек.</option>
+		<option value='60'>мин.</option>
+		<option value='3600'>час.</option>
+    </select>
+	<input type='CheckBox' name='SetTimeProcessing'><FONT SIZE='' COLOR='#000000'>Таймер.</FONT></input></TH>
+	<TH><input type='CheckBox' name='setLog'><FONT SIZE='' COLOR='#000000'>Включить лог.</FONT></input></TH>
+</TR>
+</TABLE>
+
+<input type='button' id='start' value='Ping'></input>
+<input type='button' value='IP ADRESS' onclick='OnClickButtonbtnSET'></input>
+<input type='button' value='Обновить' onclick='WindowOnLoad'></input>
+<input id="CloseButton" type="button" value="Закрыть" onclick="Close"></input>
+<TABLE border='1'>
+	<TR>
+		<TD><div id='Version_Div'>Версия: X.X</div></TD>
+		<TD><span id = 'ProcessList'></span></TD>
+		<TH><FONT SIZE='' COLOR='#000000'>Проверка:</TD>
+		<TH><div id='sTime'></div></TD>
+	</TR>
+</TABLE>
+</body>
+</html>
